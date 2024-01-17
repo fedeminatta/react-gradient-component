@@ -20,7 +20,7 @@ yarn add gradient-react-component
 
 # Ejemplo de uso
 
-![Alt text](https://raw.githubusercontent.com/fedeminatta/react-gradient-component/main/image.png)
+![Alt text](https://raw.githubusercontent.com/fedeminatta/react-gradient-component/main/assets/image.png)
 
 ```
 import { GradientContain, GradientCircle, GradientContent } from 'gradient-react-component';
