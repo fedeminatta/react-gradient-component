@@ -1,6 +1,0 @@
-{
-	"presets": [
-		"@babel/preset-env", // Para compatibilidad con diferentes entornos
-		"@babel/preset-react" // Para React
-	]
-}
