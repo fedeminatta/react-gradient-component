@@ -1,1 +1,9 @@
 node_modules
+GradientCircle
+GradientContain
+GradientContent
+package-lock.json
+.babelrc 
+index.d.ts
+tsconfig.json
+webpack.config.js
