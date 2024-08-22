@@ -3,3 +3,5 @@ src
 .babelrc 
 tsconfig.json
 webpack.config.js
+package.json
+package-lock.json
