@@ -1,6 +1,6 @@
 {
 	"name": "gradient-react-component",
-	"version": "1.1.5",
+	"version": "1.1.6",
 	"description": "gradient react component for background",
 	"main": "dist/bundle.js",
 	"types": "dist/index.d.ts",
@@ -10,6 +10,7 @@
 	"author": "Minatta Federico",
 	"license": "MIT",
 	"dependencies": {
+		"gradient-react-component": "file:",
 		"react": "^18",
 		"react-dom": "^18"
 	},
