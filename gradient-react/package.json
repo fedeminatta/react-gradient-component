@@ -1,5 +1,5 @@
 {
-	"name": "gradient-react-component",
+	"name": "gradient-react",
 	"version": "1.0.0",
 	"description": "create gradients easily",
 	"main": "./build/index.js",
@@ -26,6 +26,7 @@
 	},
 	"homepage": "https://github.com/fedeminatta/react-gradient-component#readme",
 	"dependencies": {
+		"gradient-react": "file:",
 		"gradient-react-component": "file:",
 		"react": "^18",
 		"react-dom": "^18"
