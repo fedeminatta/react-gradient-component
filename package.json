@@ -10,7 +10,6 @@
 	"author": "Minatta Federico",
 	"license": "MIT",
 	"dependencies": {
-		"gradient-react-component": "file:",
 		"react": "^18",
 		"react-dom": "^18"
 	},
