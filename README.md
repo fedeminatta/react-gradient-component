@@ -55,6 +55,7 @@ El componente GradientCircle te permite crear círculos con gradientes personali
 
 ```
 import { GradientCircle } from 'gradient-react-component';
+import { GradientCircle } from 'gradient-react-component';
 
 const MyComponent = () => (
 	<GradientCircle
@@ -62,6 +63,10 @@ const MyComponent = () => (
 		color2="#01a7cc"
 		width="350px"
 		height="350px"
+                styles={{
+                    left: '130px',
+                    top: '300px',
+                }}
 	/>
 );
 ```
@@ -73,6 +78,7 @@ const MyComponent = () => (
 | width     | Ancho del círculo                     | '200px'           |
 | height    | Altura del círculo                    | '200px'           |
 | blur      | Intensidad del desenfoque del círculo | '80'              |
+| styles    | Estilos CSS aplicados al contenedor   | {}                |
 
 <br/>
 
@@ -84,12 +90,24 @@ GradientContent se utiliza para envolver contenido dentro de un área con un fon
 import { GradientContent } from 'gradient-react-component';
 
 const MyComponent = () => (
-	<GradientContent>
+	<GradientContent
+            styles={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignContent: 'center',
+                justifyContent: 'center',
+                width: '100%',
+            }}
+    >
 		<h2>Título de la sección</h2>
 		<p>Texto genérico</p>
 	</GradientContent>
 );
 ```
+
+| Propiedad | Descripción                         | Valor por Defecto |
+| --------- | ----------------------------------- | ----------------- |
+| styles    | Estilos CSS aplicados al contenedor | {}                |
 
 <br/>
 
