@@ -1,7 +1,7 @@
 import React from 'react';
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
 interface GradientContainProps {
-    styles?: {};
+    styles?: CSSProperties;
     children: ReactNode;
 }
 declare const GradientContain: React.FC<GradientContainProps>;
