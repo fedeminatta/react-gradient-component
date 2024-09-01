@@ -1,44 +1,207 @@
-<h1> gradient-react-component </h1>
+<h1> gradient-react </h1>
 
-gradient-react-component es una librería de componentes React que facilita la creación de elementos con gradientes. Incluye componentes como GradientCircle, GradientContent y GradientContain para ayudarte a diseñar interfaces de usuario atractivas con gradientes de manera sencilla.
+[Website](https://gradient-react-web.vercel.app/)
+
+## English
+
+gradient-react is a React component library that simplifies the creation of gradient elements. It includes components like GradientCircle, GradientContent, and GradientContain to help you design attractive user interfaces with gradients easily.
+
+<br/>
+
+## Installation
+
+```bash
+npm install gradient-react
+```
+
+or you can use yarn
+
+```bash
+yarn add gradient-react
+```
+
+<br/>
+
+# Usage Example
+
+![Example](https://raw.githubusercontent.com/fedeminatta/react-gradient-component/main/assets/image.png)
+
+```jsx
+import {
+	GradientContain,
+	GradientCircle,
+	GradientContent,
+} from 'gradient-react';
+
+const MyComponent = () => (
+	<GradientContain styles={{ margin: '100px', padding: '20px' }}>
+		<GradientCircle
+			color1='#7701cc'
+			color2='#01a7cc'
+			width='350px'
+			height='350px'
+		/>
+		<GradientCircle
+			color1='#eb540e'
+			blur='50'
+			color2='#cc0101'
+			width='450px'
+			height='450px'
+		/>
+		<GradientContent>
+			<h2>Section title</h2>
+			<p>Generic text</p>
+		</GradientContent>
+	</GradientContain>
+);
+```
+
+## Components
+
+### GradientCircle
+
+The GradientCircle component allows you to create circles with custom gradients.
+
+```jsx
+import { GradientCircle } from 'gradient-react';
+
+const MyComponent = () => (
+	<GradientCircle
+		color1='#7701cc'
+		color2='#01a7cc'
+		width='350px'
+		height='350px'
+		styles={{ left: '130px', top: '300px' }}
+	/>
+);
+```
+
+| Property | Description                          | Default Value |
+| -------- | ------------------------------------ | ------------- |
+| color1   | The color of the circle's center     | '#ED0101'     |
+| color2   | The color of the circle's outer edge | '#CC2A01'     |
+| width    | The width of the circle              | '200px'       |
+| height   | The height of the circle             | '200px'       |
+| blur     | The intensity of the circle's blur   | '80'          |
+| styles   | CSS styles applied to the container  | {}            |
+
+<br/>
+
+## GradientContent
+
+GradientContent is used to wrap content within an area with a gradient background.
+
+```jsx
+import { GradientContent } from 'gradient-react';
+
+const MyComponent = () => (
+	<GradientContent
+		styles={{
+			display: 'flex',
+			flexDirection: 'column',
+			alignContent: 'center',
+			justifyContent: 'center',
+			width: '100%',
+		}}
+	>
+		<h2>Section Title</h2> <p>Generic text</p>
+	</GradientContent>
+);
+```
+
+| Property | Description                         | Default Value |
+| -------- | ----------------------------------- | ------------- |
+| styles   | CSS styles applied to the container | {}            |
+
+<br/>
+
+## GradientContain
+
+GradientContain is a container that can house multiple components with gradients.
+
+```jsx
+import {
+	GradientContain,
+	GradientCircle,
+	GradientContent,
+} from 'gradient-react';
+
+const MyComponent = () => (
+	<GradientContain styles={{ margin: '100px', padding: '20px' }}>
+		<GradientCircle
+			color1='#7701cc'
+			color2='#01a7cc'
+			width='350px'
+			height='350px'
+		/>
+		<GradientCircle
+			color1='#eb540e'
+			blur='50'
+			color2='#cc0101'
+			width='450px'
+			height='450px'
+		/> <GradientContent>
+			<h2>Section Title</h2> <p>Generic text</p>
+		</GradientContent>
+	</GradientContain>
+);
+```
+
+| Property | Description                         | Default Value |
+| -------- | ----------------------------------- | ------------- |
+| styles   | CSS styles applied to the container | {}            |
+
+<br/>
+
+## Contributing
+
+If you would like to contribute to this library, you're welcome!
+
+## Spanish
+
+gradient-react es una librería de componentes React que facilita la creación de elementos con gradientes. Incluye componentes como GradientCircle, GradientContent y GradientContain para ayudarte a diseñar interfaces de usuario atractivas con gradientes de manera sencilla.
 
 <br/>
 
 ## Instalación
 
-```
-npm install gradient-react-component
+```bash
+npm install gradient-react
 ```
 
 o puedes usar yarn
 
-```
-yarn add gradient-react-component
+```bash
+yarn add gradient-react
 ```
 
 <br/>
 
 # Ejemplo de uso
 
-![Alt text](https://raw.githubusercontent.com/fedeminatta/react-gradient-component/main/assets/image.png)
+![Example](https://raw.githubusercontent.com/fedeminatta/react-gradient-component/main/assets/image.png)
 
-```
-import { GradientContain, GradientCircle, GradientContent } from 'gradient-react-component';
+```jsx
+import {
+	GradientContain,
+	GradientCircle,
+	GradientContent,
+} from 'gradient-react';
 
 const MyComponent = () => (
 	<GradientContain styles={{ margin: '100px', padding: '20px' }}>
 		<GradientCircle
-			color1="#7701cc"
-			color2="#01a7cc"
-			width="350px"
-			height="350px"
+			color1='#7701cc'
+			color2='#01a7cc'
+			width='350px'
+			height='350px'
 		/>
 		<GradientCircle
-			color1="#eb540e"
-			blur="50"
-			color2="#cc0101"
-			width="450px"
-			height="450px"
+			color1='#eb540e'
+			blur='50'
+			color2='#cc0101'
+			width='450px'
+			height='450px'
 		/>
 		<GradientContent>
 			<h2>Título de la sección</h2>
@@ -53,15 +216,20 @@ const MyComponent = () => (
 GradientCircle
 El componente GradientCircle te permite crear círculos con gradientes personalizados.
 
-```
-import { GradientCircle } from 'gradient-react-component';
+```jsx
+import { GradientCircle } from 'gradient-react';
+import { GradientCircle } from 'gradient-react';
 
 const MyComponent = () => (
 	<GradientCircle
-		color1="#7701cc"
-		color2="#01a7cc"
-		width="350px"
-		height="350px"
+		color1='#7701cc'
+		color2='#01a7cc'
+		width='350px'
+		height='350px'
+		styles={{
+			left: '130px',
+			top: '300px',
+		}}
 	/>
 );
 ```
@@ -73,6 +241,7 @@ const MyComponent = () => (
 | width     | Ancho del círculo                     | '200px'           |
 | height    | Altura del círculo                    | '200px'           |
 | blur      | Intensidad del desenfoque del círculo | '80'              |
+| styles    | Estilos CSS aplicados al contenedor   | {}                |
 
 <br/>
 
@@ -80,16 +249,28 @@ const MyComponent = () => (
 
 GradientContent se utiliza para envolver contenido dentro de un área con un fondo de gradiente.
 
-```
-import { GradientContent } from 'gradient-react-component';
+```jsx
+import { GradientContent } from 'gradient-react';
 
 const MyComponent = () => (
-	<GradientContent>
+	<GradientContent
+		styles={{
+			display: 'flex',
+			flexDirection: 'column',
+			alignContent: 'center',
+			justifyContent: 'center',
+			width: '100%',
+		}}
+	>
 		<h2>Título de la sección</h2>
 		<p>Texto genérico</p>
 	</GradientContent>
 );
 ```
+
+| Propiedad | Descripción                         | Valor por Defecto |
+| --------- | ----------------------------------- | ----------------- |
+| styles    | Estilos CSS aplicados al contenedor | {}                |
 
 <br/>
 
@@ -97,23 +278,27 @@ const MyComponent = () => (
 
 GradientContain es un contenedor que puede albergar varios componentes con gradientes.
 
-```
-import { GradientContain, GradientCircle, GradientContent } from 'gradient-react-component';
+```jsx
+import {
+	GradientContain,
+	GradientCircle,
+	GradientContent,
+} from 'gradient-react';
 
 const MyComponent = () => (
 	<GradientContain styles={{ margin: '100px', padding: '20px' }}>
 		<GradientCircle
-			color1="#7701cc"
-			color2="#01a7cc"
-			width="350px"
-			height="350px"
+			color1='#7701cc'
+			color2='#01a7cc'
+			width='350px'
+			height='350px'
 		/>
 		<GradientCircle
-			color1="#eb540e"
-			blur="50"
-			color2="#cc0101"
-			width="450px"
-			height="450px"
+			color1='#eb540e'
+			blur='50'
+			color2='#cc0101'
+			width='450px'
+			height='450px'
 		/>
 		<GradientContent>
 			<h2>Título de la sección</h2>
