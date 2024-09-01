@@ -1,6 +1,7 @@
 <h1> gradient-react </h1>
 
 [Website](https://gradient-react-web.vercel.app/)
+[GIT](https://www.npmjs.com/package/gradient-react)
 
 ## English
 
