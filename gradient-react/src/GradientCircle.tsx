@@ -1,21 +1,26 @@
+'use client';
+
 import React, { CSSProperties } from 'react';
+
 interface GradientCircleProps {
-	blur?: string;
+	blur?: string | number;
 	width?: string;
 	height?: string;
 	color1?: string;
 	color2?: string;
 	styles?: CSSProperties;
+	className?: string;
 }
 
-const GradientCircle: React.FC<GradientCircleProps> = ({
+const GradientCircle = ({
 	blur = '80',
 	width = '200px',
 	height = '200px',
 	color1 = '#ED0101',
 	color2 = '#CC2A01',
 	styles = {},
-}) => {
+	className = '',
+}: GradientCircleProps) => {
 	const estilo: CSSProperties = {
 		zIndex: 1,
 		boxSizing: 'border-box',
@@ -32,6 +37,8 @@ const GradientCircle: React.FC<GradientCircleProps> = ({
 		margin: 0,
 		...styles,
 	};
-	return <div style={estilo as React.CSSProperties}></div>;
+
+	return <div style={estilo} className={className}></div>;
 };
+
 export default GradientCircle;

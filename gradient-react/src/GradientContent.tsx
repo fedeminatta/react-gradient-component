@@ -1,17 +1,29 @@
-import React from 'react';
-import { ReactNode, CSSProperties } from 'react';
+'use client';
+
+import React, { ReactNode, CSSProperties } from 'react';
 
 interface GradientContentProps {
 	children: ReactNode;
 	styles?: CSSProperties;
+	className?: string;
 }
 
-const GradientContent: React.FC<GradientContentProps> = ({
+const GradientContent = ({
 	children,
 	styles = {},
-}) => {
+	className = '',
+}: GradientContentProps) => {
+	const defaultStyles: CSSProperties = {
+		position: 'absolute',
+		zIndex: 2,
+		...styles,
+	};
+
 	return (
-		<div style={{ position: 'absolute', zIndex: 2, ...styles }}>{children}</div>
+		<div style={defaultStyles} className={className}>
+			{children}
+		</div>
 	);
 };
+
 export default GradientContent;
