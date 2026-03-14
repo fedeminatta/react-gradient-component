@@ -1,5 +1,6 @@
-node_modules
-.babelrc 
+node_modules/
+src/
+.babelrc
 tsconfig.json
 webpack.config.js
-src/
+.gitignore
